@@ -49,3 +49,8 @@ Contains essential information about your project, including:
 . A library that allows you to load environment variables from a .env file.
 . Useful for storing sensitive information (like API keys or database credentials) outside of your code, . improving security.
 . Requires installing the dotenv package and calling dotenv.config() in your code to load the environment variables.
+
+9. gitignore:
+
+. A file in your version control system (like Git) that specifies which files and folders should be ignored when committing changes to the repository.
+. Helps keep your repository clean and organized by excluding unnecessary files like node_modules or temporary build artifacts.
