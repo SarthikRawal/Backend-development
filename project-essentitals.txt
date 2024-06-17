@@ -43,3 +43,9 @@ Contains essential information about your project, including:
 
 . A JavaScript compiler that can transpile modern JavaScript code (written using features not yet supported by all browsers) into code that can run in older browsers.
 . Useful for ensuring your code works across a wider range of browsers.
+
+8. dotenv:
+
+. A library that allows you to load environment variables from a .env file.
+. Useful for storing sensitive information (like API keys or database credentials) outside of your code, . improving security.
+. Requires installing the dotenv package and calling dotenv.config() in your code to load the environment variables.
