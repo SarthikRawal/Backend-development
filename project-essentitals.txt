@@ -38,3 +38,8 @@ Contains essential information about your project, including:
 
 . A utility for Node.js development that automatically restarts your Node.js application when you make changes to your code.
 . Saves you the hassle of manually restarting the application after every code edit.
+
+7. Babel:
+
+. A JavaScript compiler that can transpile modern JavaScript code (written using features not yet supported by all browsers) into code that can run in older browsers.
+. Useful for ensuring your code works across a wider range of browsers.
