@@ -27,3 +27,14 @@ Contains essential information about your project, including:
 . Third-party libraries or packages your project needs to function properly in a production environment (when deployed).
 . Listed in the dependencies section of your package.json file.
 . Installed by running npm install in your project directory.
+
+5. Dev Dependencies:
+
+. Third-party libraries or packages needed for development tasks like testing, building, or linting, but not required for the project to run in production.
+. Listed in the devDependencies section of your package.json file.
+. Installed by running npm install or, to exclude them from production builds, npm install --save-dev.
+
+6. Nodemon:
+
+. A utility for Node.js development that automatically restarts your Node.js application when you make changes to your code.
+. Saves you the hassle of manually restarting the application after every code edit.
