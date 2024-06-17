@@ -1,0 +1,12 @@
+1. package.json
+
+> A file at the root of a Node.js project that acts as a manifest.
+Contains essential information about your project, including:
+. Name
+. Version
+. Author
+. License
+. Dependencies (more on that below)
+. Scripts (commands to run specific tasks in your project)
+. Created and managed using the npm init command.
+
