@@ -1,0 +1,56 @@
+> Express.js
+
+- Express.js is a popular open-source web framework for Node.js. It's essentially a tool that simplifies building web applications and APIs on the server-side using JavaScript.
+
+Here are some key things to know about Express.js:
+
+- Focuses on Node.js: It's designed specifically to work with Node.js, leveraging its strengths for asynchronous programming and event-driven architecture.
+- Lightweight and Flexible: Express.js is known for its minimalist approach, providing a core set of features that can be easily extended using middleware. This allows for a lot of customization and flexibility in building web applications.
+- Routing: A core feature of Express.js is routing, which helps define how the application responds to different URL requests (GET, POST, etc.) and directs them to the appropriate functions.
+- APIs: Express.js is great for building RESTful APIs, which are web services that follow a specific set of architectural principles for data exchange.
+
+Overall, Express.js is a powerful tool that can streamline the development process for web applications and APIs on the Node.js platform.
+
+
+> Getting started with Express.js
+
+1. Prerequisites:
+Node.js and npm: Ensure you have Node.js and npm (Node Package Manager) installed on your system. 
+
+2. Project Setup:
+Create a project directory: Open your terminal and create a new directory for your project using mkdir.
+Navigate to the directory: Use the cd command to enter the newly created project directory.
+Initialize project: Run npm init to initialize a new npm project. This will create a package.json file for managing project dependencies.
+
+3. Install Express:
+Use npm to install Express as a dependency for your project. Run the following command in your terminal:
+
+-> npm install express
+
+4. Create your Express App:
+Create a file named app.js (or any name you prefer) in your project directory. This file will contain the code for your Express application.
+
+5. Basic Express Server:
+Open app.js in your preferred code editor.
+
+        const express = require('express');
+        const app = express();
+
+        // Define the port to listen on (usually 3000)
+        const port = 3000;
+
+        // Basic route for handling GET requests to the root path ('/')
+        app.get('/', (req, res) => {
+        res.send('Hello World!');
+        });
+
+        // Start the server and listen for incoming requests
+        app.listen(port, () => {
+        console.log(`Server listening on port ${port}`);
+        });
+
+6. Run the Server:
+In your terminal, navigate to your project directory and run the following command to start the Express server:
+
+-> node app.js
+
