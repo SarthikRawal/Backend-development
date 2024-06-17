@@ -22,3 +22,8 @@ Contains essential information about your project, including:
 . Contains all the third-party code (dependencies) your project relies on.
 . Don't add this folder to version control either, as it can become quite large.
 
+4. Dependencies:
+
+. Third-party libraries or packages your project needs to function properly in a production environment (when deployed).
+. Listed in the dependencies section of your package.json file.
+. Installed by running npm install in your project directory.
