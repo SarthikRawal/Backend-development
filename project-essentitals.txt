@@ -16,3 +16,9 @@ Contains essential information about your project, including:
 . Ensures everyone working on the project uses the same versions, preventing unexpected errors due to dependency version changes.
 . Don't add this file to your version control system (like Git) by default. Instead, use npm ci for reliable dependency installation across environments.
 
+3. node_modules:
+
+. A folder automatically created by npm when you run npm install.
+. Contains all the third-party code (dependencies) your project relies on.
+. Don't add this folder to version control either, as it can become quite large.
+
