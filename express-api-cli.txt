@@ -1,0 +1,30 @@
+>Express-api-cli:
+is a command line tool that generates an express project structure preconfigured with most commonly used packages that can speed up your development workflow. Rather than wasting time setting up your project structure, express-api-cli does the heavy lifting so that you can concentrate on building that awesome application
+
+
+>Getting Started
+
+- Ensure Node.js and NPM is installed on your computer
+
+- Install the package globally: sudo npm install -g express-api-cli
+
+- Open your command line tool and type the following command to create a new project: exp-api create <project-name>
+
+- Select your preferred language (Javascript or Typescript) and Database Driver (Mongoose or Sequelize)
+
+? Select a development language Javascript
+? Select a database driver Sequelize
+✔ test-project created successfully
+✔ Packages installed successfully
+
+      🥳🥳🥳🥳🥳
+    Voila!!! test-project is ready for development. 
+
+    Create something Awesome
+       🚀🚀🚀🚀🚀
+
+    For How to use and more info on express-api-cli
+    Visit https://github.com/tolustar/express-api-cli/ 
+    Cheers!!!
+    
+- Once project is installed, configure your environment variables
