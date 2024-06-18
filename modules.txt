@@ -29,3 +29,14 @@ app.get('/data', (req, res) => {
   res.json({ message: 'This is CORS-enabled for a single origin.' });
 });
 
+-------------------------------------------------------------------------------
+
+>Helmet
+Helmet is a middleware for Express.js that helps secure your app by setting various HTTP headers. It is designed to protect your application from some well-known web vulnerabilities by configuring HTTP headers appropriately.
+
+Purpose:
+- To enhance the security of your Express.js applications by mitigating common web vulnerabilities.
+
+-> const helmet = require('helmet');
+-> app.use(helmet());
+
