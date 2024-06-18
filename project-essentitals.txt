@@ -54,3 +54,9 @@ Contains essential information about your project, including:
 
 . A file in your version control system (like Git) that specifies which files and folders should be ignored when committing changes to the repository.
 . Helps keep your repository clean and organized by excluding unnecessary files like node_modules or temporary build artifacts.
+
+10. Frameworks vs libraries:
+
+Frameworks: Provide a more comprehensive structure for building web applications, often dictating the overall application architecture and offering a wide range of built-in features. (Examples: Express.js, React, Angular)
+
+Libraries: Offer specific functionality that you can integrate into your existing codebase without enforcing a particular structure. (Examples: Lodash for utility functions, Moment.js for date manipulation)
