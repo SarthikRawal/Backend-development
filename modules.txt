@@ -40,3 +40,14 @@ Purpose:
 -> const helmet = require('helmet');
 -> app.use(helmet());
 
+-------------------------------------------------------------------------------
+
+> Routes
+In the context of web development, particularly with Express.js, routes define how an application responds to client requests for a specific endpoint. These endpoints usually consist of a path and an HTTP method (GET, POST, PUT, DELETE, etc.).
+
+Purpose:
+- To map specific URL patterns to specific handler functions, which determine what should be done when a particular endpoint is requested.
+
+How It Works:
+- When an HTTP request is made to a specific path, the router matches the request to a route and executes the corresponding handler function.
+- Routes can be defined directly on the app object or on an express.Router instance, which can then be mounted on the app.
