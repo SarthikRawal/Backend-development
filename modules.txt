@@ -51,3 +51,13 @@ Purpose:
 How It Works:
 - When an HTTP request is made to a specific path, the router matches the request to a route and executes the corresponding handler function.
 - Routes can be defined directly on the app object or on an express.Router instance, which can then be mounted on the app.
+
+-------------------------------------------------------------------------------
+
+>Morgan
+Morgan is a middleware for Express.js that logs HTTP requests. It is commonly used to log details of incoming requests, such as the HTTP method, URL, status code, response time, and more. Morgan is especially useful for monitoring and debugging web applications.
+
+Key Features:
+Predefined Formats: Built-in logging formats (e.g., 'combined', 'common', 'dev', 'tiny').
+Custom Formats: Ability to create custom logging formats.
+Integration: Easy integration with Express.js applications.
