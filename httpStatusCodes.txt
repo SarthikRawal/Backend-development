@@ -1,0 +1,31 @@
+> HTTP status codes are three-digit codes that web servers send back to web browsers or other clients (like mobile apps) in response to an HTTP request. These codes indicate whether the request was successful, failed, or needs further action.
+
+They are divided into 5 groups:
+
+1xx - Informational 
+2xx - Success
+3xx - Redirection
+4xx - Client error
+5xx - Server error
+
+> let's look into some of the Codes:
+
+200 - Ok, everything went well
+201 - Created
+204 - No content, worked but no data to send back 
+
+400 - Bad request
+401 - Unauthorized, can be authentication error
+403 - Forbidden, access place where you are unauthorized
+404 - Not Found
+429 - Too many requests
+
+502 - Bad Gateway, can happen because of server overload or network glitches or just misconfiguration
+503 - Service unavailable
+
+301 - Moved permanently
+302 - Found
+304 - Not modified
+
+100 - Continue
+101 - Switching protocols 
