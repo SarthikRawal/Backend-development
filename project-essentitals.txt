@@ -75,3 +75,17 @@ At its core, middleware is a function that has access to three essential argumen
 . next: A function that represents the next middleware in the chain or the final route handler.
 
 -> app.use(<middleware function>)
+
+
+12. REST API: (or RESTful API) stands for REpresentational State Transfer Application Programming Interface. It's a set of architectural principles and constraints that guide how web services communicate with each other. Here's a breakdown of the key aspects of REST APIs:
+
+> Core Concepts:
+
+. Client-Server Model: REST APIs follow a client-server model. The client (like a mobile app, web application, or another web service) sends requests to the server (which hosts the REST API) and receives responses.
+. Resources: REST APIs deal with resources, which represent data or functionality exposed by the server. Examples of resources could be user information, products in an online store, or blog posts.
+. Representations: Resources are identified by URIs (Uniform Resource Identifiers) and accessed through representations. These representations are typically in formats like JSON (JavaScript Object Notation) or XML (Extensible Markup Language) that both clients and servers can understand.
+. Standard Methods: REST APIs use standard HTTP methods (GET, POST, PUT, DELETE) for interacting with resources:
+    GET: Retrieve a resource representation.
+    POST: Create a new resource.
+    PUT: Update an existing resource.
+    DELETE: Delete a resource.
