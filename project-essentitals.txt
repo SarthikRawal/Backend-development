@@ -77,9 +77,9 @@ At its core, middleware is a function that has access to three essential argumen
 -> app.use(<middleware function>)
 
 
-12. REST API: (or RESTful API) stands for REpresentational State Transfer Application Programming Interface. It's a set of architectural principles and constraints that guide how web services communicate with each other. Here's a breakdown of the key aspects of REST APIs:
+12. REST API: (or RESTful API) stands for REpresentational State Transfer Application Programming Interface. It's a set of architectural principles and constraints that guide how web services communicate with each other. 
 
-> Core Concepts:
+> Here's a breakdown of the key aspects of REST APIs:
 
 . Client-Server Model: REST APIs follow a client-server model. The client (like a mobile app, web application, or another web service) sends requests to the server (which hosts the REST API) and receives responses.
 . Resources: REST APIs deal with resources, which represent data or functionality exposed by the server. Examples of resources could be user information, products in an online store, or blog posts.
@@ -89,3 +89,14 @@ At its core, middleware is a function that has access to three essential argumen
     POST: Create a new resource.
     PUT: Update an existing resource.
     DELETE: Delete a resource.
+
+13. Joi 
+(pronounced "joy") is a popular JavaScript library for data validation. It's not part of the core JavaScript language itself, but rather an external module that you can install using npm or yarn.
+
+Here's a breakdown of what Joi offers:
+
+. Schema Definition: Joi allows you to define schemas that describe the expected structure and format of your data. These schemas use a simple and intuitive language that makes them easy to read and write.
+. Validation: Joi can validate data against your defined schemas. This helps ensure that the data you receive from users, APIs, or other sources conforms to your expectations.
+. Error Handling: During validation, Joi provides informative error messages that pinpoint exactly where and how the data fails to meet the schema requirements.
+. Flexibility: Joi supports a wide range of data types, including strings, numbers, arrays, objects, and more. It also offers various validation functions like required(), min(), max(), email(), patterns() and many others to enforce specific rules on your data.
+
