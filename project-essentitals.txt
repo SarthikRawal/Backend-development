@@ -60,3 +60,18 @@ Contains essential information about your project, including:
 Frameworks: Provide a more comprehensive structure for building web applications, often dictating the overall application architecture and offering a wide range of built-in features. (Examples: Express.js, React, Angular)
 
 Libraries: Offer specific functionality that you can integrate into your existing codebase without enforcing a particular structure. (Examples: Lodash for utility functions, Moment.js for date manipulation)
+
+11. Middleware
+. A middleware is a function which executes on each request and response.
+. We can also say that middleware have access to the req and res and it works as a middle man  
+
+. It acts like a series of stopovers that requests and responses make before reaching their final destination
+
+>Function as Middleware:
+At its core, middleware is a function that has access to three essential arguments:
+
+. req: The incoming HTTP request object containing information like the URL, headers, and body.
+. res: The outgoing HTTP response object used to send responses back to the client.
+. next: A function that represents the next middleware in the chain or the final route handler.
+
+-> app.use(<middleware function>)
