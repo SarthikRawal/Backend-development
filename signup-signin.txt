@@ -1,0 +1,74 @@
+// user.service.js file
+
+export const signUp = async (userDetails) => {
+    try {
+        if (userDetails != null) {
+            const data = await User.create(userDetails);
+            return {
+                code: HttpStatus.CREATED,
+                data: data,
+                message: "Created user successfully"
+            }
+        } else {
+            return {
+                code: HttpStatus.BAD_REQUEST,
+                data: [],
+                message: "details unavailable"
+            }
+        }
+
+    } catch (error) {
+        return {
+            code: HttpStatus.INTERNAL_SERVER_ERROR,
+            data: [],
+            message: "Something went wrong"
+        }
+    }
+}
+
+export const signIn = async (userDetails) => {
+    // console.log(userDetails);
+    try {
+        const data = await User.findOne({ email: userDetails.email, password: userDetails.password });
+        console.log("data", data);
+        if (data) {
+            // console.log("success");
+            return {
+                code: HttpStatus.OK,
+                data: [],
+                message: "login successfully"
+            }
+        }
+    } catch (error) {
+        return {
+            code: HttpStatus.INTERNAL_SERVER_ERROR,
+            data: [],
+            message: "Something went wrong"
+        };
+    }
+
+}
+
+
+// user.controller.js file
+export const signUp = async (req, res) => {
+    const data = await UserService.signUp(req.body);
+    res.status(data.code).json({
+        code: data.code,
+        data: data.data,
+        message: data.message
+    })
+}
+
+export const signIn = async (req, res) => {
+    try {
+        const data = await UserService.signIn(req.body);
+        console.log("controller", data);
+        res.status(data.code).json(data);
+
+    } catch (error) {
+        console.log(error);
+        // throw error;
+    }
+
+}
