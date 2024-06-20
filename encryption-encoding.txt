@@ -1,0 +1,22 @@
+- Encoding is like translating a book from one language to another. Anyone with a translation guide can understand the encoded message.
+
+- Encryption is like locking a safe with a combination. Only someone with the correct combination can access the contents.
+
+> Encryption
+- Purpose: To protect data from unauthorized access.
+- How it Works: Encryption transforms readable data (plaintext) into an unreadable format (ciphertext) using an algorithm and a key. Only someone with the correct key can decrypt it and turn it back into readable data.
+- Use Case: Protecting sensitive information, like passwords or credit card numbers, during transmission or storage.
+- Example: When you send a message over the internet, encryption ensures that only the intended recipient can read it.
+
+> Encoding
+- Purpose: To convert data into a specific format for proper interpretation by different systems.
+- How it Works: Encoding transforms data from one format into another using a scheme. It's meant to be easily reversible without needing a key.
+- Use Case: Ensuring that data can be correctly displayed, transmitted, or stored.
+- Example: When you upload a picture to a website, it might be encoded in a format like JPEG or PNG so that it can be correctly displayed in web browsers.
+
+> Key Differences
+Security: Encryption is about security and protecting data, while encoding is about data representation and formatting.
+
+Reversibility: Encrypted data requires a key to be turned back into readable form, while encoded data can be easily reverted to its original form using the correct scheme.
+
+Intent: Encryption is used to prevent unauthorized access, whereas encoding is used to ensure data can be properly used by different systems.
