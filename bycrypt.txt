@@ -11,3 +11,15 @@ The bcrypt module in JavaScript is a popular library for hashing and verifying p
 > installation
 
 --> npm i bcrypt
+
+
+> Salting
+
+Salting is a security practice used in password hashing to enhance the protection of passwords against various types of attacks, such as rainbow table attacks and pre-computed hash attacks. When a password is salted, a unique, random value (called a "salt") is generated and added to the password before it is hashed. This makes each password hash unique, even if two users have the same password.
+
+> How Salting Works:
+
+Generate a Salt: A random value is generated.
+Combine Salt and Password: The salt is appended or prepended to the password.
+Hash the Combination: The combined string (salt + password) is then hashed using a secure hashing algorithm.
+Store Salt and Hash: Both the salt and the hashed value are stored in the database.
