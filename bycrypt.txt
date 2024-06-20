@@ -1,0 +1,13 @@
+> bcrypt
+
+The bcrypt module in JavaScript is a popular library for hashing and verifying passwords. It provides robust methods for creating salted password hashes and comparing them, ensuring secure password storage and authentication.
+
+> Features
+- Salting: Automatically generates a salt and appends it to the password before hashing.
+- Hashing: Uses the Blowfish cipher to create a secure hash of the password.
+- Comparison: Verifies if a given plain text password matches a hashed password.
+- Adjustable Work Factor: Allows setting the cost factor to control the computational complexity of the hashing process, balancing security and performance.
+
+> installation
+
+--> npm i bcrypt
