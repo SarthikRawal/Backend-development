@@ -23,3 +23,13 @@ Generate a Salt: A random value is generated.
 Combine Salt and Password: The salt is appended or prepended to the password.
 Hash the Combination: The combined string (salt + password) is then hashed using a secure hashing algorithm.
 Store Salt and Hash: Both the salt and the hashed value are stored in the database.
+
+> Saltround
+
+The optimal number of salt rounds (also known as the cost factor) in bcrypt depends on a balance between security and performance.
+
+- Key Considerations for Salt Rounds
+ Security: Higher salt rounds make the hashing process more secure, as it becomes harder for attackers to use brute force attacks.
+ Performance: Higher salt rounds also mean increased computational cost, which can slow down your application, especially if you are hashing passwords frequently (e.g., during login).
+
+--> a common recommendation is to use a salt round value between 10 and 12. 
