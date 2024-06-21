@@ -1,51 +1,79 @@
 // user.service.js file
 
 export const signUp = async (userDetails) => {
-    try {
-        if (userDetails != null) {
-            const data = await User.create(userDetails);
-            return {
-                code: HttpStatus.CREATED,
-                data: data,
-                message: "Created user successfully"
-            }
-        } else {
-            return {
-                code: HttpStatus.BAD_REQUEST,
-                data: [],
-                message: "details unavailable"
-            }
-        }
+  try {
+    if (userDetails != null) {
+      const hashedPassword = await bcrypt.hash(userDetails.password, 10);
+      userDetails.password = hashedPassword;
 
-    } catch (error) {
-        return {
-            code: HttpStatus.INTERNAL_SERVER_ERROR,
-            data: [],
-            message: "Something went wrong"
-        }
+
+      const data = await User.create(userDetails);
+
+      return {
+        code: HttpStatus.CREATED,
+        data: data,
+        message: "Created user successfully"
+      };
+    } else {
+      return {
+        code: HttpStatus.BAD_REQUEST,
+        data: [],
+        message: "details unavailable"
+      };
     }
+
+  } catch (error) {
+    console.log(error);
+    return {
+      code: HttpStatus.INTERNAL_SERVER_ERROR,
+      data: [],
+      message: "Something went wrong"
+    };
+  }
 }
 
 export const signIn = async (userDetails) => {
-    // console.log(userDetails);
-    try {
-        const data = await User.findOne({ email: userDetails.email, password: userDetails.password });
-        console.log("data", data);
-        if (data) {
-            // console.log("success");
-            return {
-                code: HttpStatus.OK,
-                data: [],
-                message: "login successfully"
-            }
-        }
-    } catch (error) {
-        return {
-            code: HttpStatus.INTERNAL_SERVER_ERROR,
-            data: [],
-            message: "Something went wrong"
-        };
+  // console.log("--> user details", userDetails);
+  try {
+    if (!userDetails.email || !userDetails.password) {
+      return {
+        code: HttpStatus.BAD_REQUEST,
+        data: [],
+        message: "Email and password are required"
+      };
     }
+
+    const user = await User.findOne({ where: { email: userDetails.email } });
+
+    if (!user) {
+      return {
+        code: HttpStatus.UNAUTHORIZED,
+        data: [],
+        message: "Invalid email or password"
+      };
+    }
+
+    const validPassword = await bcrypt.compare(userDetails.password, user.password);
+
+    if (!validPassword) {
+      return {
+        code: HttpStatus.UNAUTHORIZED,
+        data: [],
+        message: "Invalid email or password"
+      };
+    }
+    return {
+      code: HttpStatus.OK,
+      data: [],
+      message: "Login successful"
+    };
+  } catch (error) {
+    return {
+      code: HttpStatus.INTERNAL_SERVER_ERROR,
+      data: [],
+      message: "Something went wrong"
+    };
+  }
 
 }
 
