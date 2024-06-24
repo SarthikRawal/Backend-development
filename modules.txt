@@ -61,3 +61,17 @@ Key Features:
 Predefined Formats: Built-in logging formats (e.g., 'combined', 'common', 'dev', 'tiny').
 Custom Formats: Ability to create custom logging formats.
 Integration: Easy integration with Express.js applications.
+
+-------------------------------------------------------------------------------
+
+> JSON web token
+Defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed.
+
+why should we use JWT:
+- Authorization
+- Information Exchange
+
+JWT structure
+- header
+- Payload
+- Signature
