@@ -1,0 +1,14 @@
+> Making access token and reference token is a modern practice where it gives user a better experience in using the application.
+
+> Access tokens and refresh tokens are used for authentication in JavaScript applications, but they differ in purpose and lifetime
+
+Access token:
+- short lived
+- contains user information
+
+Refresh Token:
+- long lived
+- not used for direct access
+
+> conclusion
+A refresh token is nothing but a access token but it has life time about 1 or 2 months. access token has expire time about 10 to 15 minutes. when ever this access token expire. we don't ask user to login again to get new access token instead we send refresh token to the server here we verify that token and send new access token to the client. with this method user don't have to login again and again. this makes user experience much more easier to user.
