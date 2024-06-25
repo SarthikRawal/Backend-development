@@ -1,0 +1,12 @@
+> Authentication and Authorization are two critical concepts related to security.
+
+- Authentication is the process of verifying the identity of a user or service. It's about ensuring that the entity is who they claim to be.
+
+- Authorization is the process of determining if a user or service has the right to access a specific resource or perform a particular action. It occurs after authentication.
+
+
+
+> Imagine a building with security.
+
+Authentication: Showing your ID to the security guard proves you are who you say you are (entering credentials).
+Authorization: Having a keycard grants you access to specific floors or areas (user permissions).
